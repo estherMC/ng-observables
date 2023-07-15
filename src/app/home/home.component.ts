@@ -33,6 +33,7 @@ export class HomeComponent implements OnInit, OnDestroy {
         //observer.error()//Type of error
         //observer.complete()//Different types, this sends a complete observer
       }, 1000);
+      //Si un observable emet un error, no es completa.
     });
 
     this.firstObsSubscription = customIntervalObservable.subscribe(data => {
